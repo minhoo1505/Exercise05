@@ -49,5 +49,61 @@ namespace Exercise5a
                 Console.WriteLine(s[i]);
             }
         }
+        public static bool IsUpper(char c)
+        {
+            for (int i = 65; i < 90; i++)
+            {
+                Console.Write(i);
+                if (c.Equals(i))
+                    return true;
+            }
+            return false;
+        }
+        public static bool IsLower(char c)
+        {
+            for (int i = 97; i < 122; i++)
+            {
+                Console.Write(i);
+                if (c.Equals(i))
+                    return true;
+            }
+            return false;
+        }
+        public static bool IsUpper1(char c)
+        {
+            for (int i = 97; i < 122; i++)
+            {
+                Console.Write((char)i);
+                if (c.Equals((char)i))
+                    return false;
+            }
+            return true;
+        }
+        public static bool IsLower1(char c)
+        {
+            for (int i = 65; i < 90; i++)
+            {
+                Console.Write((char)i);
+                if (c.Equals((char)i))
+                    return false;
+
+            }
+            return true;
+        }
+        public static char ToUpeper(char c)
+        {
+           // int b = Char2Code(c);
+            //b = b - 32;
+            //c = (char)b;
+
+            return c;
+        }
+        public static char ToLower(char c)
+        {
+            //int b = Char2Code(c);
+            //b = b + 32;
+            //c = (char)b;
+            return c;
+        }
     }
 }
